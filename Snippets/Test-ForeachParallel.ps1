@@ -3,8 +3,10 @@
 $array = @("C:\Users\Net\Downloads","C:\Temp")
 
 $array | foreach-object -parallel { 
+    # get the folder name without the full path
     $folder = $_.Split("\")
     $folder = $folder[$folder.Length -1]
-    Get-ChildItem $_ | out-file "c:\Git\$folder.txt"
+    # get the directory tree and write this out to a text file
+    Get-ChildItem $_ -Recurse | out-file "c:\Git\$folder.txt" 
 
 } -ThrottleLimit 10
