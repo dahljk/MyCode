@@ -11,3 +11,5 @@
 # to dump out existing Share Permissions, use Get-SmbShareAccess
 
 # Get-SmbShareAccess -Name "VMFiles"
+
+# I'll also need to have a script to delete the old DFS links, create new DFS links, and also to update the user accounts
