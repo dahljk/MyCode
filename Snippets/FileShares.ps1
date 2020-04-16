@@ -9,7 +9,7 @@
 
 
 # new-SmbShare seems to be the cmdlet to use
-# New-SmbShare -Name "VMSFiles" -Path "C:\ClusterStorage\Volume1\VMFiles" -FullAccess "Contoso\Administrator", "Contoso\Contoso-HV1$" -CachingMode None
+# New-SmbShare -Name "VMSFiles" -Path "C:\ClusterStorage\Volume1\VMFiles" -FullAccess "Contoso\Administrator", "Contoso\Contoso-HV1$" -CachingMode None -NoAccess "Res\Foreign Nationals"
 # New-SmbShare -Name "VMSFiles" -Path "C:\ClusterStorage\Volume1\VMFiles" -ChangeAccess "Users" -FullAccess "Administrators" -CachingMode None
 # there are also parameters for -ReadAccess, -ChangeAccess, and -NoAccess
 
